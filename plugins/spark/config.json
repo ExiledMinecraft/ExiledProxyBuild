@@ -1,0 +1,7 @@
+{
+  "_header": "spark configuration file - https://spark.lucko.me/docs/Configuration",
+  "backgroundProfiler": true,
+  "viewerUrl": "https://spark.exiledproject.ru/",
+  "bytebinUrl": "https://bytebin.exiledproject.ru",
+  "bytesocksHost": "bytesocks.exiledproject.ru"
+}

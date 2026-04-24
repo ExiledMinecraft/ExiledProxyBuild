@@ -1,0 +1,6 @@
+# Changing the UUID in this file will make Plan regard your server as a completely new server
+# Tread with caution.
+Server:
+    ID: 1
+    UUID: "0f0bbf19-10dc-4027-9db0-a3a1c67ebc76"
+    Web_address: "https://play.exiledproject.ru:25137"

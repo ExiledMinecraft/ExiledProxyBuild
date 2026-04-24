@@ -1,0 +1,39 @@
+510f683005 - Last occurred: 2026-04-18 Occurrences: 1
+---- Context 1 ----
+Plan v5.7 build 3306
+Velocity 3.5.0-SNAPSHOT (git-a6d97e28-b592)
+Server v3.5.0-SNAPSHOT (git-a6d97e28-b592)
+
+Allow Plan to check for updates from Github/versions.txt or disable update check.
+Version information could not be loaded from Github/versions.txt
+
+---- Stacktrace ----
+java.net.ConnectException: Connection timed out
+   java.base/sun.nio.ch.Net.connect0(Native Method)
+   java.base/sun.nio.ch.Net.connect(Net.java:546)
+   java.base/sun.nio.ch.Net.connect(Net.java:535)
+   java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+   java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+   java.base/java.net.Socket.connect(Socket.java:659)
+   java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+   java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181)
+   java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:166)
+   java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516)
+   java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604)
+   java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:206)
+   java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:288)
+   java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+   java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963)
+   java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899)
+   java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+   java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1377)
+   java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1302)
+   java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+   java.base/java.net.URL.openStream(URL.java:1263)
+   com.djrapitops.plan.version.VersionInfoLoader.load(VersionInfoLoader.java:52)
+   com.djrapitops.plan.version.VersionChecker.loadVersionInfo(VersionChecker.java:77)
+   com.djrapitops.plan.version.VersionChecker.checkForUpdates(VersionChecker.java:88)
+   com.velocitypowered.proxy.scheduler.VelocityScheduler$VelocityTask.lambda$run$0(VelocityScheduler.java:285)
+   java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+   java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+   java.base/java.lang.Thread.run(Thread.java:1474)
